@@ -1,0 +1,57 @@
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\DavisWeatherlinkV2ApiNet.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\DavisWeatherlinkV2ApiNet.pdb
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.AssemblyReference.cache
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.CoreCompileInputs.cache
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.pdb
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\DavisWeatherlinkV2ApiNet.dll.config
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Buffers.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Memory.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.ValueTuple.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Buffers.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Memory.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.ValueTuple.xml
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.CopyComplete
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gary\Documents\Visual Studio 2022\Projects\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\DavisWeatherlinkV2ApiNet.dll.config
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\DavisWeatherlinkV2ApiNet.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\DavisWeatherlinkV2ApiNet.pdb
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Buffers.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Memory.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.ValueTuple.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Buffers.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Memory.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.ValueTuple.xml
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.AssemblyReference.cache
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.CoreCompileInputs.cache
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.CopyComplete
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.dll
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.pdb
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\sensor-types.txt
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\gpl.txt
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\license.txt
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\release-notes.txt
+C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\readme.md

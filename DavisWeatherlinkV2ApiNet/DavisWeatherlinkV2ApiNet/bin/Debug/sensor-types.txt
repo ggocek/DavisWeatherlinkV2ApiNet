@@ -1,0 +1,729 @@
+﻿https://raw.githubusercontent.com/weatherlink/v2-api/master/resources/universal-sensor-catalog.json
+===================================================================================================
+{
+      "sensor_type": 37,
+      "manufacturer": "Davis Instruments",
+      "product_name": "Vantage Vue, Wireless",
+      "product_number": "6357",
+      "category": "ISS",
+      "data_structures": [
+        {
+          "data_structure_type": "23",
+          "description": "WeatherLink Console ISS Current Conditions Record",
+          "data_structure": {
+            "temp": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent temperature reading"
+            },
+            "hum": {
+              "type": "float",
+              "units": "percent relative humidity",
+              "description": "Most recent humidity reading"
+            },
+            "dew_point": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent derived dew point"
+            },
+            "wet_bulb": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent derived wet bulb"
+            },
+            "heat_index": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent derived heat index"
+            },
+            "wind_chill": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent derived wind chill"
+            },
+            "thw_index": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent derived temperature, humidity, wind index"
+            },
+            "thsw_index": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent derived temperature, humidity, solar, wind index"
+            },
+            "wbgt": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent derived wet bulb globe temperature"
+            },
+            "wind_speed_last": {
+              "type": "float",
+              "units": "miles per hour",
+              "description": "Most recent wind speed value"
+            },
+            "wind_dir_last": {
+              "type": "integer",
+              "units": "degrees",
+              "description": "Most recent wind direction value"
+            },
+            "wind_speed_avg_last_1_min": {
+              "type": "float",
+              "units": "miles per hour",
+              "description": "Average wind speed over last 1 minute"
+            },
+            "wind_dir_scalar_avg_last_1_min": {
+              "type": "integer",
+              "units": "degrees",
+              "description": "Scalar average wind direction over last 1 minute"
+            },
+            "wind_speed_avg_last_2_min": {
+              "type": "float",
+              "units": "miles per hour",
+              "description": "Average wind speed over last 2 minutes"
+            },
+            "wind_dir_scalar_avg_last_2_min": {
+              "type": "integer",
+              "units": "degrees",
+              "description": "Scalar average wind direction over last 2 minutes"
+            },
+            "wind_speed_hi_last_2_min": {
+              "type": "float",
+              "units": "miles per hour",
+              "description": "Maximum wind speed over last 2 minutes"
+            },
+            "wind_dir_at_hi_speed_last_2_min": {
+              "type": "integer",
+              "units": "degrees",
+              "description": "Direction of maximum wind speed over last 2 minutes"
+            },
+            "wind_speed_avg_last_10_min": {
+              "type": "float",
+              "units": "miles per hour",
+              "description": "Average wind speed over last 10 minutes"
+            },
+            "wind_dir_scalar_avg_last_10_min": {
+              "type": "integer",
+              "units": "degrees",
+              "description": "Scalar average wind direction over last 10 minutes"
+            },
+            "wind_speed_hi_last_10_min": {
+              "type": "float",
+              "units": "miles per hour",
+              "description": "Maximum wind speed over last 10 minutes"
+            },
+            "wind_dir_at_hi_speed_last_10_min": {
+              "type": "integer",
+              "units": "degrees",
+              "description": "Direction of maximum wind speed over last 10 minutes"
+            },
+            "wind_run_day": {
+              "type": "double",
+              "units": "miles",
+              "description": "Daily accumulation of wind run since local midnight"
+            },
+            "rain_size": {
+              "type": "integer",
+              "units": "1 = 0.01 inch; 2 = 0.2 mm; 3 = 0.1 mm; 4 = 0.001 inch",
+              "description": "Rain collector size"
+            },
+            "rain_rate_last_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Most recent rain rate"
+            },
+            "rain_rate_last_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Most recent rain rate"
+            },
+            "rain_rate_last_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Most recent rain rate"
+            },
+            "rain_rate_hi_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Highest rain rate over the last 1 minute"
+            },
+            "rain_rate_hi_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Highest rain rate over the last 1 minute"
+            },
+            "rain_rate_hi_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Highest rain rate over the last 1 minute"
+            },
+            "rainfall_last_15_min_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain over the last 15 minutes"
+            },
+            "rainfall_last_15_min_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain over the last 15 minutes"
+            },
+            "rainfall_last_15_min_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain over the last 15 minutes"
+            },
+            "rain_rate_hi_last_15_min_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Highest rain rate over the last 15 minutes"
+            },
+            "rain_rate_hi_last_15_min_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Highest rain rate over the last 15 minutes"
+            },
+            "rain_rate_hi_last_15_min_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Highest rain rate over the last 15 minutes"
+            },
+            "rainfall_last_60_min_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain over the last 60 minutes"
+            },
+            "rainfall_last_60_min_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain over the last 60 minutes"
+            },
+            "rainfall_last_60_min_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain over the last 60 minutes"
+            },
+            "rainfall_last_24_hr_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain over the last 24 hours"
+            },
+            "rainfall_last_24_hr_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain over the last 24 hours"
+            },
+            "rainfall_last_24_hr_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain over the last 24 hours"
+            },
+            "rain_storm_current_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain in the current storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_current_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain in the current storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_current_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain in the current storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_current_start_at": {
+              "type": "long",
+              "units": "seconds",
+              "description": "Unix timestamp of the start of the current storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_last_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain in the previous storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_last_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain in the previous storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_last_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain in the previous storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_last_start_at": {
+              "type": "long",
+              "units": "seconds",
+              "description": "Unix timestamp of the start of the previous storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rain_storm_last_end_at": {
+              "type": "long",
+              "units": "seconds",
+              "description": "Unix timestamp of the end of the previous storm (the first rain recorded after a period of 24 hours or more without rain is considered a new storm)"
+            },
+            "rainfall_day_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain since local midnight"
+            },
+            "rainfall_day_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain since local midnight"
+            },
+            "rainfall_day_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain since local midnight"
+            },
+            "rainfall_month_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain since local midnight on the first of the month"
+            },
+            "rainfall_month_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain since local midnight on the first of the month"
+            },
+            "rainfall_month_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain since local midnight on the first of the month"
+            },
+            "rainfall_year_clicks": {
+              "type": "integer",
+              "units": "clicks",
+              "description": "Total rain since local midnight on the first of the month where the month is the user's selected month for the start of their rain year"
+            },
+            "rainfall_year_in": {
+              "type": "float",
+              "units": "inches",
+              "description": "Total rain since local midnight on the first of the month where the month is the user's selected month for the start of their rain year"
+            },
+            "rainfall_year_mm": {
+              "type": "float",
+              "units": "millimeters",
+              "description": "Total rain since local midnight on the first of the month where the month is the user's selected month for the start of their rain year"
+            },
+            "solar_rad": {
+              "type": "integer",
+              "units": "watts per square meter",
+              "description": "Most recent solar radiation reading"
+            },
+            "solar_energy_day": {
+              "type": "double",
+              "units": "langleys",
+              "description": "Daily accumulation of solar energy since local midnight"
+            },
+            "et_day": {
+              "type": "float",
+              "units": "inches",
+              "description": "Sum of evapotranspiration since local midnight, only calculated hourly"
+            },
+            "et_month": {
+              "type": "float",
+              "units": "inches",
+              "description": "Sum of evapotranspiration since local midnight on the first of the month, only calculated hourly"
+            },
+            "et_year": {
+              "type": "float",
+              "units": "inches",
+              "description": "Sum of evapotranspiration since local midnight on the first of the month where the month is the user's selected month for the start of their rain year, only calculated hourly"
+            },
+            "uv_index": {
+              "type": "float",
+              "units": "ultraviolet index",
+              "description": "Most recent UV index"
+            },
+            "uv_dose_day": {
+              "type": "double",
+              "units": "minimum erythemal dose",
+              "description": "Total UV Dose since local midnight or since last user reset"
+            },
+            "hdd_day": {
+              "type": "float",
+              "units": "heating degree days in degrees Fahrenheit, to convert to an equivalent Celsius value use C = F x 5 / 9",
+              "description": ""
+            },
+            "cdd_day": {
+              "type": "float",
+              "units": "cooling degree days in degrees Fahrenheit, to convert to an equivalent Celsius value use C = F x 5 / 9",
+              "description": ""
+            },
+            "reception_day": {
+              "type": "integer",
+              "units": "percent",
+              "description": "Percentage of packets received versus total possible over the local day once synced unless manually reset by user, updates every packet (null when not yet synced)"
+            },
+            "rssi_last": {
+              "type": "integer",
+              "units": "decibel-milliwatts",
+              "description": "DavisTalk Received Signal Strength Indication (RSSI) of last packet received, updates every packet"
+            },
+            "crc_errors_day": {
+              "type": "integer",
+              "units": "",
+              "description": "Number of data packets containing CRC errors over the local day unless manually reset by user, updates every minute"
+            },
+            "resyncs_day": {
+              "type": "integer",
+              "units": "",
+              "description": "Total number of resyncs since local midnight unless manually reset by user. The console will attempt to resynchronize with the station after 20 consecutive bad packets, updates every minute"
+            },
+            "packets_received_day": {
+              "type": "integer",
+              "units": "",
+              "description": "Total number of received packets over the local day unless manually reset by user, updates every packet"
+            },
+            "packets_received_streak": {
+              "type": "integer",
+              "units": "",
+              "description": "Current number of packets received in a row, updates every minute"
+            },
+            "packets_missed_day": {
+              "type": "integer",
+              "units": "",
+              "description": "Total number of packets that are missed for any reason over the local day unless manually reset by user, updates every minute"
+            },
+            "packets_missed_streak": {
+              "type": "integer",
+              "units": "",
+              "description": "Current number of missed packets in a row that are missed for any reason, can be reset by user at any time, updates every minute"
+            },
+            "packets_received_streak_hi_day": {
+              "type": "integer",
+              "units": "",
+              "description": "Longest Streak of Packets Received in a row over the local day unless manually reset by user, updates every minute"
+            },
+            "packets_missed_streak_hi_day": {
+              "type": "integer",
+              "units": "",
+              "description": "Longest streak of consecutive packets received over the archive interval"
+            },
+            "rx_state": {
+              "type": "integer",
+              "units": "",
+              "description": "Configured Receiver State, updates every minute:\n0 = Synced & Tracking OK.\n1 = Synced (missing less than 20 DavisTalk packets in a row).\n2 = Scanning (after missing 20 DavisTalk packets in a row).\nState at end of interval."
+            },
+            "freq_error_current": {
+              "type": "integer",
+              "units": "",
+              "description": "Current radio frequency error of the radio packets received, updates every packet"
+            },
+            "freq_error_total": {
+              "type": "integer",
+              "units": "",
+              "description": "Cumulative radio frequency error of the last packet received, updates every packet"
+            },
+            "freq_index": {
+              "type": "integer",
+              "units": "",
+              "description": "Frequency Index of Last Packet Received, updates every packet"
+            },
+            "last_packet_received_timestamp": {
+              "type": "long",
+              "units": "TODO",
+              "description": "Unix timestamp of last DavisTalk packet that was received. Null if no packets have been received since this transmitter was configured or set"
+            },
+            "trans_battery_flag": {
+              "type": "integer",
+              "units": "",
+              "description": "0 = battery OK. 1 = battery low."
+            },
+            "trans_battery_volt": {
+              "type": "float",
+              "units": "volts",
+              "description": "Current transmitter battery voltage"
+            },
+            "solar_panel_volt": {
+              "type": "float",
+              "units": "volts",
+              "description": "Current transmitter solar panel voltage"
+            },
+            "supercap_volt": {
+              "type": "float",
+              "units": "volts",
+              "description": "Current transmitter super capacitor voltage"
+            },
+            "spars_volt": {
+              "type": "float",
+              "units": "volts",
+              "description": "Current SPARS battery voltage"
+            },
+            "spars_rpm": {
+              "type": "integer",
+              "units": "RPM",
+              "description": "Current SPARS RPM"
+            }
+          }
+        },
+===================================================================
+    {
+      "sensor_type": 242,
+      "manufacturer": "Davis Instruments",
+      "product_name": "Barometer",
+      "product_number": "",
+      "category": "Barometer",
+      "data_structures": [
+        {
+          "data_structure_type": "19",
+          "description": "WeatherLink Console Barometer Current Conditions Record",
+          "data_structure": {
+            "bar_sea_level": {
+              "type": "float",
+              "units": "inches of mercury",
+              "description": "Most recent barometer sensor reading + bar_offset; reduced to sea level using altimeter reduction method"
+            },
+            "bar_trend": {
+              "type": "float",
+              "units": "inches of mercury",
+              "description": "Current 3 hour barometer trend with following definitions:\nRising Rapidly: bar_trend > =0.060\nRising Slowly: bar_trend >= 0.020\nSteady: bar_trend < 0.020 and bar_trend > -0.020\nFalling Slowly: bar_trend <= -0.020\nFalling Rapidly: bar_trend <= -0.060\nNot Available: bar_trend = null"
+            },
+            "bar_absolute": {
+              "type": "float",
+              "units": "inches of mercury",
+              "description": "Raw barometer sensor reading + bar_offset"
+            },
+            "bar_offset": {
+              "type": "float",
+              "units": "inches of mercury",
+              "description": "User configured offset"
+            }
+          }
+        },
+===================================================================
+    {
+      "sensor_type": 365,
+      "manufacturer": "Davis Instruments",
+      "product_name": "Inside Temp/Hum",
+      "product_number": "",
+      "category": "Inside Temp/Hum",
+      "data_structures": [
+        {
+          "data_structure_type": "21",
+          "description": "WeatherLink Console Internal Temperature/Humidity Current Conditions Record",
+          "data_structure": {
+            "temp_in": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent inside temperature reading"
+            },
+            "hum_in": {
+              "type": "float",
+              "units": "percent relative humidity",
+              "description": "Most recent inside humidity reading"
+            },
+            "dew_point_in": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent inside dew point reading"
+            },
+            "wet_bulb_in": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent inside wet buld reading"
+            },
+            "heat_index_in": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent inside heat index reading"
+            },
+            "wbgt_in": {
+              "type": "float",
+              "units": "degrees Fahrenheit",
+              "description": "Most recent inside wet bulb globe temperature reading"
+            }
+          }
+        },
+===================================================================
+    {
+      "sensor_type": 509,
+      "manufacturer": "",
+      "product_name": "Console Health",
+      "product_number": "",
+      "category": "Health",
+      "data_structures": [
+        {
+          "data_structure_type": "27",
+          "description": "WeatherLink Console Health Record",
+          "data_structure": {
+            "health_version": {
+              "type": "integer",
+              "units": "",
+              "description": "Health data structure version number"
+            },
+            "console_sw_version": {
+              "type": "string",
+              "units": "",
+              "description": "Console application version number"
+            },
+            "console_radio_version": {
+              "type": "string",
+              "units": "",
+              "description": "Radio firmware version number"
+            },
+            "console_api_level": {
+              "type": "long",
+              "units": "",
+              "description": "API level version number"
+            },
+            "battery_voltage": {
+              "type": "integer",
+              "units": "millivolts",
+              "description": "Battery voltage"
+            },
+            "battery_percent": {
+              "type": "integer",
+              "units": "percentage",
+              "description": "Battery charge"
+            },
+            "battery_condition": {
+              "type": "integer",
+              "units": "",
+              "description": "Battery health condition:\n1: Unknown\n2: Good\n3: Overheat\n4: Dead\n5: Overvoltage\n6: Unspecified Failure\n7: Cold"
+            },
+            "battery_current": {
+              "type": "float",
+              "units": "milliamps",
+              "description": "Positive means the battery is charging while negative means the battery is discharging"
+            },
+            "battery_temp": {
+              "type": "float",
+              "units": "degrees Celsius",
+              "description": "Battery temperature"
+            },
+            "charger_plugged": {
+              "type": "integer",
+              "units": "",
+              "description": "Power charger plugged in status:\n0: Unplugged\n1: Plugged in"
+            },
+            "battery_status": {
+              "type": "integer",
+              "units": "",
+              "description": "Battery charge status:\n1: Unknown\n2: Charging\n3: Discharging\n4: Not charging\n5: Full"
+            },
+            "os_uptime": {
+              "type": "long",
+              "units": "seconds",
+              "description": "Uptime since last reboot"
+            },
+            "app_uptime": {
+              "type": "long",
+              "units": "seconds",
+              "description": "Uptime since last app restart"
+            },
+            "bgn": {
+              "type": "integer",
+              "units": "",
+              "description": "Background Noise level of DavisTalk radio receiver"
+            },
+            "ip_address_type": {
+              "type": "integer",
+              "units": "",
+              "description": "IP address type:\n1: Dynamic\n2: Dyn DNS Override\n3: Static"
+            },
+            "ip_v4_address": {
+              "type": "string",
+              "units": "",
+              "description": "IP Address of the Console"
+            },
+            "ip_v4_gateway": {
+              "type": "string",
+              "units": "",
+              "description": "IP Address of the LAN’s Router or Gateway"
+            },
+            "ip_v4_netmask": {
+              "type": "string",
+              "units": "",
+              "description": "IP Address of the Subnet Mask"
+            },
+            "dns_type_used": {
+              "type": "integer",
+              "units": "",
+              "description": "DNS used (1=Primary, 2=Secondary, 3=public) if available"
+            },
+            "rx_kilobytes": {
+              "type": "long",
+              "units": "1000 bytes",
+              "description": "Total Bytes received on network interface"
+            },
+            "tx_kilobytes": {
+              "type": "long",
+              "units": "1000 bytes",
+              "description": "Total Bytes sent on network interface"
+            },
+            "local_api_queries": {
+              "type": "long",
+              "units": "",
+              "description": "Local API queries served"
+            },
+            "wifi_rssi": {
+              "type": "integer",
+              "units": "decibel-milliwatts",
+              "description": "WiFi Signal Strength"
+            },
+            "link_uptime": {
+              "type": "long",
+              "units": "seconds",
+              "description": "Uptime since last WiFi network loss"
+            },
+            "connection_uptime": {
+              "type": "long",
+              "units": "seconds",
+              "description": "Uptime since last upload connection loss"
+            },
+            "bootloader_version": {
+              "type": "long",
+              "units": "",
+              "description": "Bootloader version"
+            },
+            "clock_source": {
+              "type": "integer",
+              "units": "",
+              "description": "0: Unset, 1: User, 2: Network, 3: GNSS"
+            },
+            "gnss_sip_tx_id": {
+              "type": "integer",
+              "units": "",
+              "description": ""
+            },
+            "free_mem": {
+              "type": "long",
+              "units": "kilobytes",
+              "description": "Available internal RAM in KB"
+            },
+            "internal_free_space": {
+              "type": "long",
+              "units": "kilobytes",
+              "description": "Available space in the storage partition in KB"
+            },
+            "system_free_space": {
+              "type": "long",
+              "units": "kilobytes",
+              "description": "Available space in the system partition in KB"
+            },
+            "queue_kilobytes": {
+              "type": "long",
+              "units": "kilobytes",
+              "description": "Backend upload record queue size in KB"
+            },
+            "database_kilobytes": {
+              "type": "long",
+              "units": "kilobytes",
+              "description": "Onboard database size in KB"
+            },
+            "battery_cycle_count": {
+              "type": "long",
+              "units": "",
+              "description": "Number of times the battery has used the equivalent of a full battery charge since the last counter reset"
+            },
+            "console_os_version": {
+              "type": "string",
+              "units": "",
+              "description": "Console operating system version number"
+            }
+          }
+        }
+      ]
+    }
