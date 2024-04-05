@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gary\\source\\repos\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gary\\source\\repos\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet.csproj": {
+      "version": "2024.4.4",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gary\\source\\repos\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet.csproj",
+        "projectName": "DavisWeatherlinkV2ApiNet",
+        "projectPath": "C:\\Users\\gary\\source\\repos\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet.csproj",
+        "packagesPath": "C:\\Users\\gary\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gary\\source\\repos\\DavisWeatherlinkV2ApiNet\\DavisWeatherlinkV2ApiNet\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "NuGet.Build.Tasks.Pack": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.9.1, )"
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

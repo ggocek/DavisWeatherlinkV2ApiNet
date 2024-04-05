@@ -36,15 +36,6 @@ C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin
 C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Text.Encodings.Web.dll
 C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.ValueTuple.dll
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\Newtonsoft.Json.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Buffers.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Memory.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\System.ValueTuple.xml
 C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.AssemblyReference.cache
 C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.CoreCompileInputs.cache
 C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\obj\Debug\DavisWeatherlinkV2ApiNet.csproj.CopyComplete

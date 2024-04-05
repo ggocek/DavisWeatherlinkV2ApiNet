@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DavisWeatherlinkV2ApiNet</id>
+    <version>2024.4.4</version>
+    <title>DavisWeatherlinkV2ApiNet</title>
+    <authors>GaryGo</authors>
+    <description>Davis API V2 DOT NET class library</description>
+    <copyright>Copyright (c) 2024 Gary Gocek</copyright>
+    <repository url="https://github.com/ggocek/DavisWeatherlinkV2ApiNet" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encodings.Web" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Data.DataSetExtensions" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Numerics" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.8" />
+    </frameworkAssemblies>
+    <contentFiles>
+      <files include="any/net48/sensor-types.txt" buildAction="Content" />
+      <files include="any/net48/gpl.txt" buildAction="Content" />
+      <files include="any/net48/license.txt" buildAction="Content" />
+      <files include="any/net48/release-notes.txt" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\bin\Debug\DavisWeatherlinkV2ApiNet.dll" target="lib\net48\DavisWeatherlinkV2ApiNet.dll" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\sensor-types.txt" target="content\sensor-types.txt" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\sensor-types.txt" target="contentFiles\any\net48\sensor-types.txt" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\gpl.txt" target="content\gpl.txt" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\gpl.txt" target="contentFiles\any\net48\gpl.txt" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\license.txt" target="content\license.txt" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\license.txt" target="contentFiles\any\net48\license.txt" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\release-notes.txt" target="content\release-notes.txt" />
+    <file src="C:\Users\gary\source\repos\DavisWeatherlinkV2ApiNet\DavisWeatherlinkV2ApiNet\release-notes.txt" target="contentFiles\any\net48\release-notes.txt" />
+  </files>
+</package>
