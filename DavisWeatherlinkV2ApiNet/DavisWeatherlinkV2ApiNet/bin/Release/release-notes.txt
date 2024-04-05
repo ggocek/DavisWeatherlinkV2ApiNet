@@ -1,0 +1,10 @@
+﻿DavisWeatherlinkV2ApiNet - copyright (c) 2024, Gary Gocek
+All rights reserved.
+A package for utilizing the Davis WeatherLink API V2.
+
+2024-04-05
+Migrated to a package reference style solution, added .nupkg files.
+See instructions in readme.
+
+2024-04-04
+First release.
