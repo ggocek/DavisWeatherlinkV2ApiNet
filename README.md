@@ -44,94 +44,132 @@ instead of the basic acccess I used while developing
 DavisWeatherlinkV2ApiNet. Although the console shows conditions in real
 time, API calls can get new data every 15 minutes.
 
-## Installation
+## Traditional .NET references (this project is not uploaded to nuget.org):
 There is no installer, and no access from NuGet at this time.
-Use your development IDE (Visual Studio) to create a reference. Then
-your code will have access to:
-DavisWeatherlinkV2ApiNet.DavisVantageVue
-DavisWeatherlinkV2ApiNet.DavisDisplay
-DavisWeatherlinkV2ApiNet.HtmlDisplayType
-DavisWeatherlinkV2ApiNet.CurrentConditions
-DavisWeatherlinkV2ApiNet.Sensor
-DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData
-DavisWeatherlinkV2ApiNet.DavisStations
-DavisWeatherlinkV2ApiNet.Station
+Use your development IDE (Visual Studio) to create a reference. The
+.DLL, .config and .pdb are in the bin/Debug and bin/Release folders. Then
+your code will have access to:<br />
+DavisWeatherlinkV2ApiNet.DavisVantageVue<br />
+DavisWeatherlinkV2ApiNet.DavisDisplay<br />
+DavisWeatherlinkV2ApiNet.HtmlDisplayType<br />
+DavisWeatherlinkV2ApiNet.CurrentConditions<br />
+DavisWeatherlinkV2ApiNet.Sensor<br />
+DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData<br />
+DavisWeatherlinkV2ApiNet.DavisStations<br />
+DavisWeatherlinkV2ApiNet.Station<br />
 
+## Local .nupkg packaging (this project is not uploaded to nuget.org):
+Find DavisWeatherlinkV2ApiNet.2024.4.4.nupkg in the bin/Debug and
+bin/Release folders (or whatever the current version is, in case I
+forget to update this readme).
+
+If you build this package yourself, build the Debug and Release
+configurations as usual. The with Visual Studio:<br />
+Tools -> Command Line -> Developer Command Prompt<br />
+msbuild -t:pack /p:Configuration=Release /p:Platform="Any CPU"<br />
+msbuild -t:pack /p:Configuration=Debug /p:Platform="Any CPU"<br />
+These msbuild commands generate the .nupkg file. This project was
+originally a .NET Framework project with a packages.config file,
+then that was migrated to a PackageReference style project. This does
+not give a Packages command in the project properties, but it allows a
+NuGet package to be created.
+
+In your client  project (that is to utilize DavisWeatherlinkV2ApiNet),
+add a folder called "nugetlocal" next to your .sln file. The folder
+name can be anything, but my example below assumes nugetlocal). Copy
+the desired .nupkg file to this folder (from either Debug or Release).<br />
+Create a file called NuGet.config next to your solution file with the
+following contents:<br />
+&lt;?xml version="1.0" encoding="utf-8"?&gt;<br />
+  &lt;configuration&gt;<br />
+    &lt;packageSources&gt;<br />
+      &lt;add key="nugetlocal" value="./nugetlocal" /&gt;<br />
+    &lt;/packageSources&gt;<br />
+    &lt;activePackageSource&gt;<br />
+      &lt;!-- this tells that all of them are active --&gt;<br />
+      &lt;add key="All" value="(Aggregate source)" /&gt;<br />
+    &lt;/activePackageSource&gt;<br />
+ &lt;/configuration&gt;<br />
+
+When you restart your client solution, packages should appear in
+the NuGet browser, or be installable using Install-Package.
+
+## Newtonsoft.JSON
 Use NuGet to install Newtonsoft.JSON. As of this writiung, v13.0.3.
 
 ## Usage suggestions
 First get the station integer ID:
 
-DavisWeatherlinkV2ApiNet.DavisVantageVue dvv = new DavisWeatherlinkV2ApiNet.DavisVantageVue()
-{
- WeatherlinkApiV2Key = "Api V2 Key",
- WeatherlinkApiV2Secret = "Api V2 Secret",
- WeatherlinkStationIdGuid = "station guid",
- WeatherlinkStationIdInt = "0", /* not needed for getting the station metadata */
- WeatherlinkAcceptLanguage = "en-US",
- WeatherlinkReferer = "something",
- WeatherlinkUserAgent = "whatever"
-};
-ds = dvv.LoadStations;
-foreach (DavisWeatherlinkV2ApiNet.Station myStation in ds.stations)
-{
-if (myStation.station_name == "desired Station Name")
-{
-int i = (myStation.station_id.HasValue ? myStation.station_id.Value : -1);
-...
+DavisWeatherlinkV2ApiNet.DavisVantageVue dvv = new DavisWeatherlinkV2ApiNet.DavisVantageVue()<br />
+{<br />
+ WeatherlinkApiV2Key = "Api V2 Key",<br />
+ WeatherlinkApiV2Secret = "Api V2 Secret",<br />
+ WeatherlinkStationIdGuid = "station guid",<br />
+ WeatherlinkStationIdInt = "0", /* not needed for getting the station metadata */<br />
+ WeatherlinkAcceptLanguage = "en-US",<br />
+ WeatherlinkReferer = "something",<br />
+ WeatherlinkUserAgent = "whatever"<br />
+};<br />
+ds = dvv.LoadStations;<br />
+foreach (DavisWeatherlinkV2ApiNet.Station myStation in ds.stations)<br />
+{<br />
+if (myStation.station_name == "desired Station Name")<br />
+{<br />
+int i = (myStation.station_id.HasValue ? myStation.station_id.Value : -1);<br />
+...<br />
 
 Use the station integer ID to get the conditions for a station:
 
-DavisWeatherlinkV2ApiNet.DavisDisplay dd = null;
-string weatherlinkApiV2Key = "Api V2 Key",
-string weatherlinkApiV2Secret = "Api V2 Secret",
-string weatherlinkStationIdGuid = "station guid",
-string conditionsAtStation = string.Empty;
-DavisWeatherlinkV2ApiNet.DavisVantageVue dvv = new DavisWeatherlinkV2ApiNet.DavisVantageVue()
-{
- WeatherlinkApiV2Key = weatherlinkApiV2Key,
- WeatherlinkApiV2Secret = weatherlinkApiV2Secret,
- WeatherlinkStationIdGuid = weatherlinkStationIdGuid,
- WeatherlinkStationIdInt = THE INT ID FROM THE CALL ABOVE,
- WeatherlinkAcceptLanguage = "en-US",
- WeatherlinkReferer = "something",
- WeatherlinkUserAgent = "whatever"
-};
-DavisWeatherlinkV2ApiNet.CurrentConditions cc = dvv.LoadCurrentConditions;
-DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleISSData = null;
-DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleBarometerData = null;
-DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleInternalTempHumData = null;
-DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleHealthData = null;
-foreach (DavisWeatherlinkV2ApiNet.Sensor mySensor in cc.sensors)
-{
- if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.VantageVueWirelessSensorType) &&
- (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ISSCUrrentConditionsDST))
- {
-  consoleISSData = mySensor.data[0];
- }
- else if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.BarometerSensorType) &&
- (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.BarometerCurrentConditionsDST))
- {
-  consoleBarometerData = mySensor.data[0];
- }
- else if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ConsoleInsideTempHumSensorType) &&
- (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.InternalTempHumCurrentConditionsDST))
- {
-  consoleInternalTempHumData = mySensor.data[0];
- }
- else if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ConsoleHealthSensorType) &&
- (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ConsoleHealthDST))
- {
-  consoleHealthData = mySensor.data[0];
- }
-}
-dd = new DavisWeatherlinkV2ApiNet.DavisDisplay()
-{
-ConsoleISSData = consoleISSData,
-ConsoleBarometerData = consoleBarometerData,
-ConsoleInternalTempHumData = consoleInternalTempHumData,
-ConsoleHealthData = consoleHealthData
-};
+DavisWeatherlinkV2ApiNet.DavisDisplay dd = null;<br />
+string weatherlinkApiV2Key = "Api V2 Key",<br />
+string weatherlinkApiV2Secret = "Api V2 Secret",<br />
+string weatherlinkStationIdGuid = "station guid",<br />
+string conditionsAtStation = string.Empty;<br />
+DavisWeatherlinkV2ApiNet.DavisVantageVue dvv = new DavisWeatherlinkV2ApiNet.DavisVantageVue()<br />
+{<br />
+ WeatherlinkApiV2Key = weatherlinkApiV2Key,<br />
+ WeatherlinkApiV2Secret = weatherlinkApiV2Secret,<br />
+ WeatherlinkStationIdGuid = weatherlinkStationIdGuid,<br />
+ WeatherlinkStationIdInt = THE INT ID FROM THE CALL ABOVE,<br />
+ WeatherlinkAcceptLanguage = "en-US",<br />
+ WeatherlinkReferer = "something",<br />
+ WeatherlinkUserAgent = "whatever"<br />
+};<br />
+DavisWeatherlinkV2ApiNet.CurrentConditions cc = dvv.LoadCurrentConditions;<br />
+DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleISSData = null;<br />
+DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleBarometerData = null;<br />
+DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleInternalTempHumData = null;<br />
+DavisWeatherlinkV2ApiNet.WeatherLinkConsoleISSData consoleHealthData = null;<br />
+foreach (DavisWeatherlinkV2ApiNet.Sensor mySensor in cc.sensors)<br />
+{<br />
+ if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.VantageVueWirelessSensorType) &&<br />
+ (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ISSCUrrentConditionsDST))<br />
+ {<br />
+  consoleISSData = mySensor.data[0];<br />
+ }<br />
+ else if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.BarometerSensorType) &&<br />
+ (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.BarometerCurrentConditionsDST))<br />
+ {<br />
+  consoleBarometerData = mySensor.data[0];<br />
+ }<br />
+ else if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ConsoleInsideTempHumSensorType) &&<br />
+ (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.InternalTempHumCurrentConditionsDST))<br />
+ {<br />
+  consoleInternalTempHumData = mySensor.data[0];<br />
+ }<br />
+ else if ((mySensor.sensor_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ConsoleHealthSensorType) &&<br />
+ (mySensor.data_structure_type == DavisWeatherlinkV2ApiNet.DavisVantageVue.ConsoleHealthDST))<br />
+ {<br />
+  consoleHealthData = mySensor.data[0];<br />
+ }<br />
+}<br />
+dd = new DavisWeatherlinkV2ApiNet.DavisDisplay()<br />
+{<br />
+ConsoleISSData = consoleISSData,<br />
+ConsoleBarometerData = consoleBarometerData,<br />
+ConsoleInternalTempHumData = consoleInternalTempHumData,<br />
+ConsoleHealthData = consoleHealthData<br />
+};<br />
 
 Also see the method,
 HtmlMarkup(string textColor, string bgColor, string extraConditions, int divwidth, int divheight, HtmlDisplayType hdt)
@@ -139,6 +177,6 @@ HtmlMarkup(string textColor, string bgColor, string extraConditions, int divwidt
 ## Live Examples
 https://weather.gocek.org/
 
-https://www.gocek.org/weather/currentweather.aspx
-The data dump markup does not include the station metadata since some
+https://www.gocek.org/weather/currentweather.aspx<br />
+The data dump markup does excludes the station metadata since some
 of the values contain personally identifiable information.
