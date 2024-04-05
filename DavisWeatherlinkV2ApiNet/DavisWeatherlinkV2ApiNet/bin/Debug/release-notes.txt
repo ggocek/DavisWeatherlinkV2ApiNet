@@ -1,18 +1,10 @@
-﻿DavisWeatherlinkV2ApiNet - a package for utilizing the Davis WeatherLink API V2.
+﻿DavisWeatherlinkV2ApiNet - copyright (c) 2024, Gary Gocek
+All rights reserved.
+A package for utilizing the Davis WeatherLink API V2.
 
-Copyright © 2024 Gary Gocek, https://gary.gocek.org
-This is open-source software, free to use for any purpose, as long as
-it (and any derivatives) remain free and open source. See the GPL
-described below for details.
+2024-04-05
+Migrated to a package reference style solution, added .nupkg files.
+See instructions in readme.
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-See gpl.txt, delivered with this program, or <https://www.gnu.org/licenses/>.
+2024-04-04
+First release.
